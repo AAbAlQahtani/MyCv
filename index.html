@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asma Alqahtani | Software Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1f1f22;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    .hero {
+      padding: 80px 0;
+      text-align: center;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #4aa3df;
+    }
+    .section-title {
+      color: #ffffff;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn {
+      background-color: #4aa3df;
+      color: #ffffff;
+    }
+    .btn:hover {
+      background-color: #3a8ec0;
+      color: #ffffff;
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill-badge {
+      background-color: #2c2c2e;
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #4aa3df;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      width: 50%;
+      padding: 1rem;
+      background-color: #2c2c2e;
+      margin: 2rem 0;
+      border-radius: 6px;
+      position: relative;
+    }
+    .timeline-item.left { left: 0; }
+    .timeline-item.right { left: 50%; }
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      width: 15px;
+      height: 15px;
+      background: #4aa3df;
+      border-radius: 50%;
+    }
+    .timeline-item.left::after { right: -8px; }
+    .timeline-item.right::after { left: -8px; }
+    .card {
+      background-color: #2c2c2e;
+      color: #ffffff;
+      border: none;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      background-color: #3a3a3c;
+    }
+    footer {
+      background-color: #111;
+      padding: 20px 0;
+      color: #777;
+      text-align: center;
+    }
+    .icon-link {
+      color: #4aa3df;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .icon-link:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>I'm Asma Alqahtani</h1>
+      <p class="lead text-light">Software QA Specialist & Front-End Developer</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="text-light text-center">
+Software Engineer with a Master’s in Computer Science and 4+ years in QA. Skilled in manual testing, front-end development (React, HTML, CSS), and Agile teamwork. Bootcamp-trained in full-stack development with hands-on experience in building responsive, user-friendly web apps.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <span class="skill-badge">Manual Testing</span>
+        <span class="skill-badge">Software QC</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">React</span>
+        <span class="skill-badge">HTML/CSS</span>
+        <span class="skill-badge">Tailwind CSS</span>
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">Git/GitHub</span>
+        <span class="skill-badge">Agile/Scrum</span>
+        <span class="skill-badge">Problem Solving</span>
+        <span class="skill-badge">Time Management</span>
+        <span class="skill-badge">Teamwork</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 px-3">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-4">
+
+        <!-- Project Cards Start -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Blocksy</h5>
+              <p class="card-text">A responsive layout using media queries and modern CSS layout techniques to adapt content across screen sizes.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/AAbAlQahtani/media-queries-hw" class="btn btn-sm">View Code</a>
+                <a href="https://aabalqahtani.github.io/media-queries-hw/" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tuwaiq Website</h5>
+              <p class="card-text">A multi-section landing page showcasing Tuwaiq activities with responsive layout using HTML and CSS.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/Iimvalue/tuwaiq-website" class="btn btn-sm">View Code</a>
+                <a href="https://iimvalue.github.io/tuwaiq-website/" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Activision Clone</h5>
+              <p class="card-text">Gaming website clone showcasing products and pages with dynamic layout using React and Tailwind CSS.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/AAbAlQahtani/activision-project-react" class="btn btn-sm">View Code</a>
+                <a href="https://activision-project-react.onrender.com/" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Airline Website</h5>
+              <p class="card-text">A responsive airline site layout with elegant UI built using Tailwind CSS.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/AAbAlQahtani/tailwind-hw-Airlines" class="btn btn-sm">View Code</a>
+                <a href="https://tailwind-hw-airlines.onrender.com/" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">YouTube Clone</h5>
+              <p class="card-text">YouTube clone with video cards, search bar, and sidebar navigation using React and YouTube API.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/AAbAlQahtani/youtube-react-project" class="btn btn-sm">View Code</a>
+                <a href="https://youtube-react-project.onrender.com/" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Stephen Fry Redesign</h5>
+              <p class="card-text">
+                A complete redesign of the official website <a href="https://www.stephenfry.com/" style="color:#4aa3df" target="_blank">stephenfry.com</a> using Flexbox layout.
+              </p>
+              <div class="mt-auto">
+                <a href="https://github.com/AAbAlQahtani/w2-flex-project" class="btn btn-sm">View Code</a>
+                <a href="https://aabalqahtani.github.io/w2-flex-project/index.html" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+              <div class="timeline-item right">
+        <h5><strong>Full-Stack Bootcamp – Tuwaiq Academy</strong></h5>
+        <p>(2024 – Present)</p>
+        <p>
+          Intensive training in JavaScript, React, Node.js, Tailwind CSS, MongoDB, and full-stack project building with version control and deployment skills.
+        </p>
+      </div>
+      
+      <div class="timeline-item left">
+        <h5><strong>Software Quality Controller – Princess Norah University</strong></h5>
+        <p>(Oct 2020 – Present)</p>
+        <p>
+          Analyze requirements and acceptance criteria, design and execute test cases, report test results, and collaborate in Agile/Scrum teams to ensure quality of large-scale web and mobile applications.
+        </p>
+      </div>
+
+      <div class="timeline-item right">
+        <h5><strong>Technical Support Intern – Princess Norah University</strong></h5>
+        <p>(Jan – May 2019)</p>
+        <p>
+          Monitored systems, diagnosed hardware/software issues, installed OS/applications, and ensured resolution of daily support requests.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Education -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <ul class="text-light text-center list-unstyled">
+        <li><strong>M.Sc. in Computer Science – King Saud University</strong> (2020–2024)</li>
+        <li><strong>B.Sc. in Computer Science – Princess Norah University</strong> (2015–2019) – GPA: 4.89 / 5</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- Publication -->
+  <section id="publication" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Publication</h2>
+      <p class="text-center text-light">
+        <strong>Title:</strong> Detection Of DDoS Attacks on Cloud Computing Environments Using Machine Learning Techniques – IEEE, 2023<br>
+        <a href="https://ieeexplore.ieee.org/document/10193141" target="_blank" class="btn btn-sm mt-2">View Publication</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="mb-3">
+        <a href="mailto:asmaalqhtani123@gmail.com" class="icon-link"><i class="bi bi-envelope-fill fs-4"></i></a>
+        <a href="https://github.com/AAbAlQahtani" class="icon-link"><i class="bi bi-github fs-4"></i></a>
+        <a href="https://www.linkedin.com/in/asmaalqahtani/" class="icon-link"><i class="bi bi-linkedin fs-4"></i></a>
+      </div>
+      <p>&copy; 2025 Asma Alqahtani. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
